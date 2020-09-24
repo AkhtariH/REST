@@ -1,0 +1,232 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Code",
+    "Name",
+    "Continent",
+    "Region",
+    "SurfaceArea",
+    "Population",
+    "LifeExpectancy",
+    "GNP",
+    "HeadOfState",
+    "Capital",
+    "Code2",
+    "Cities",
+    "Languages"
+  ],
+  "properties": {
+    "Code": {
+      "$id": "#/properties/Code",
+      "type": "string",
+      "title": "The Code Schema",
+      "default": "",
+      "examples": [
+        "AFG"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Name": {
+      "$id": "#/properties/Name",
+      "type": "string",
+      "title": "The Name Schema",
+      "default": "",
+      "examples": [
+        "Afghanistan"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Continent": {
+      "$id": "#/properties/Continent",
+      "type": "string",
+      "title": "The Continent Schema",
+      "default": "",
+      "examples": [
+        "Asia"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Region": {
+      "$id": "#/properties/Region",
+      "type": "string",
+      "title": "The Region Schema",
+      "default": "",
+      "examples": [
+        "Southern and Central Asia"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "SurfaceArea": {
+      "$id": "#/properties/SurfaceArea",
+      "type": "integer",
+      "title": "The Surfacearea Schema",
+      "default": 0,
+      "examples": [
+        652090
+      ]
+    },
+    "Population": {
+      "$id": "#/properties/Population",
+      "type": "integer",
+      "title": "The Population Schema",
+      "default": 0,
+      "examples": [
+        22720000
+      ]
+    },
+    "LifeExpectancy": {
+      "$id": "#/properties/LifeExpectancy",
+      "type": "number",
+      "title": "The Lifeexpectancy Schema",
+      "default": 0.0,
+      "examples": [
+        45.9
+      ]
+    },
+    "GNP": {
+      "$id": "#/properties/GNP",
+      "type": "integer",
+      "title": "The Gnp Schema",
+      "default": 0,
+      "examples": [
+        5976
+      ]
+    },
+    "HeadOfState": {
+      "$id": "#/properties/HeadOfState",
+      "type": "string",
+      "title": "The Headofstate Schema",
+      "default": "",
+      "examples": [
+        "Mohammad Omar"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Capital": {
+      "$id": "#/properties/Capital",
+      "type": "integer",
+      "title": "The Capital Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "Code2": {
+      "$id": "#/properties/Code2",
+      "type": "string",
+      "title": "The Code2 Schema",
+      "default": "",
+      "examples": [
+        "AF"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Cities": {
+      "$id": "#/properties/Cities",
+      "type": "array",
+      "title": "The Cities Schema",
+      "items": {
+        "$id": "#/properties/Cities/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "Name",
+          "CountryCode",
+          "Population"
+        ],
+        "properties": {
+          "Name": {
+            "$id": "#/properties/Cities/items/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "Kabul"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "CountryCode": {
+            "$id": "#/properties/Cities/items/properties/CountryCode",
+            "type": "string",
+            "title": "The Countrycode Schema",
+            "default": "",
+            "examples": [
+              "AFG"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Population": {
+            "$id": "#/properties/Cities/items/properties/Population",
+            "type": "integer",
+            "title": "The Population Schema",
+            "default": 0,
+            "examples": [
+              1780000
+            ]
+          }
+        }
+      }
+    },
+    "Languages": {
+      "$id": "#/properties/Languages",
+      "type": "array",
+      "title": "The Languages Schema",
+      "items": {
+        "$id": "#/properties/Languages/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "CountryCode",
+          "Language",
+          "IsOfficial",
+          "Percentage"
+        ],
+        "properties": {
+          "CountryCode": {
+            "$id": "#/properties/Languages/items/properties/CountryCode",
+            "type": "string",
+            "title": "The Countrycode Schema",
+            "default": "",
+            "examples": [
+              "AFG"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Language": {
+            "$id": "#/properties/Languages/items/properties/Language",
+            "type": "string",
+            "title": "The Language Schema",
+            "default": "",
+            "examples": [
+              "Balochi"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "IsOfficial": {
+            "$id": "#/properties/Languages/items/properties/IsOfficial",
+            "type": "string",
+            "title": "The Isofficial Schema",
+            "default": "",
+            "examples": [
+              "F"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Percentage": {
+            "$id": "#/properties/Languages/items/properties/Percentage",
+            "type": "number",
+            "title": "The Percentage Schema",
+            "default": 0.0,
+            "examples": [
+              0.9
+            ]
+          }
+        }
+      }
+    }
+  }
+}
